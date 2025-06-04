@@ -17,6 +17,7 @@ const cors_1 = __importDefault(require("cors"));
 const client_1 = require("@prisma/client");
 const app = (0, express_1.default)();
 const prisma = new client_1.PrismaClient();
+const PORT = process.env.PORT || 5000;
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
 app.get("/notes", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -61,6 +62,6 @@ app.delete("/notes/:id", (req, res) => __awaiter(void 0, void 0, void 0, functio
         res.status(500).send("Ooops something went wrong");
     }
 }));
-app.listen(5000, () => {
-    console.log("server running on localhost:5000");
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`);
 });
