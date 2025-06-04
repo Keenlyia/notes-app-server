@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "npx nodemon"
+    "start": "node dist/index.js",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
