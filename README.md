@@ -25,7 +25,7 @@ npx prisma db push
 npm start
 ```
 ## 📁 API Endpoints
-GET /notes
-POST /notes
-PUT /notes/:id
-DELETE /notes/:id
+- GET /notes
+- POST /notes
+- PUT /notes/:id
+- DELETE /notes/:id
